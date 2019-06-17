@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="AlgorithmGiven a sorted array nums, remove the duplicates in-place such that each element appear only once and return the new length. Do not allocate extra space for another array, you must do this by">
+<meta name="description" content="AlgorithmYou are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ARTS第四周">
-<meta property="og:url" content="http://yoursite.com/2019/04/10/ARTS第四周/index.html">
+<meta property="og:title" content="ARTS第七周">
+<meta property="og:url" content="http://yoursite.com/2019/04/29/ARTS第七周/index.html">
 <meta property="og:site_name" content="好好生活">
-<meta property="og:description" content="AlgorithmGiven a sorted array nums, remove the duplicates in-place such that each element appear only once and return the new length. Do not allocate extra space for another array, you must do this by">
+<meta property="og:description" content="AlgorithmYou are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-28T03:38:33.629Z">
+<meta property="og:updated_time" content="2019-05-12T09:00:37.344Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ARTS第四周">
-<meta name="twitter:description" content="AlgorithmGiven a sorted array nums, remove the duplicates in-place such that each element appear only once and return the new length. Do not allocate extra space for another array, you must do this by">
+<meta name="twitter:title" content="ARTS第七周">
+<meta name="twitter:description" content="AlgorithmYou are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/04/10/ARTS第四周/">
+  <link rel="canonical" href="http://yoursite.com/2019/04/29/ARTS第七周/">
 
 
 
 
 
-  <title>ARTS第四周 | 好好生活</title>
+  <title>ARTS第七周 | 好好生活</title>
   
 
 
@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/10/ARTS第四周/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/29/ARTS第七周/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="jingjing0506">
@@ -249,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">ARTS第四周</h1>
+          <h1 class="post-title" itemprop="name headline">ARTS第七周</h1>
         
 
         <div class="post-meta">
@@ -261,8 +261,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-10T22:17:49+08:00">
-                2019-04-10
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-29T10:52:30+08:00">
+                2019-04-29
               </time>
             
 
@@ -299,15 +299,32 @@
       
 
       
-        <h2 id="Algorithm"><a href="#Algorithm" class="headerlink" title="Algorithm"></a>Algorithm</h2><p>Given a sorted array nums, remove the duplicates in-place such that each element appear only once and return the new length.</p>
-<p>Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.<br>Example 1:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Given nums = [1,1,2],</span><br><span class="line"></span><br><span class="line">Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively.</span><br><span class="line"></span><br><span class="line">It doesn&apos;t matter what you leave beyond the returned length.</span><br></pre></td></tr></table></figure></p>
-<p>Example 2:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Given nums = [0,0,1,1,1,2,2,3,3,4],</span><br><span class="line"></span><br><span class="line">Your function should return length = 5, with the first five elements of nums being modified to 0, 1, 2, 3, and 4 respectively.</span><br><span class="line"></span><br><span class="line">It doesn&apos;t matter what values are set beyond the returned length.</span><br></pre></td></tr></table></figure></p>
-<p>Clarification:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Confused why the returned value is an integer but your answer is an array?</span><br><span class="line"></span><br><span class="line">Note that the input array is passed in by reference, which means modification to the input array will be known to the caller as well.</span><br><span class="line"></span><br><span class="line">Internally you can think of this:s</span><br><span class="line"></span><br><span class="line">// nums is passed in by reference. (i.e., without making a copy)</span><br><span class="line">int len = removeDuplicates(nums);</span><br><span class="line"></span><br><span class="line">// any modification to nums in your function would be known by the caller.</span><br><span class="line">// using the length returned by your function, it prints the first len elements.</span><br><span class="line">for (int i = 0; i &lt; len; i++) &#123;</span><br><span class="line">    print(nums[i]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h5 id="answer"><a href="#answer" class="headerlink" title="answer"></a>answer</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">class Solution(object):</span><br><span class="line">    def removeDuplicates(self, nums):</span><br><span class="line">        &quot;&quot;&quot;</span><br><span class="line">        :type nums: List[int]</span><br><span class="line">        :rtype: int</span><br><span class="line">        &quot;&quot;&quot;</span><br><span class="line">        for i in range(len(nums)-1, 0, -1):</span><br><span class="line">            if nums[i] == nums[i-1]:</span><br><span class="line">                nums.pop(i)</span><br><span class="line">        return len(nums)</span><br></pre></td></tr></table></figure>
-<h2 id="Rewiew"><a href="#Rewiew" class="headerlink" title="Rewiew"></a>Rewiew</h2><h2 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h2><h5 id="rabbit-mq启动UI管理界面"><a href="#rabbit-mq启动UI管理界面" class="headerlink" title="rabbit mq启动UI管理界面"></a>rabbit mq启动UI管理界面</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rabbitmq-plugins enable rabbitmq_management</span><br><span class="line">rabbitmq-server</span><br></pre></td></tr></table></figure>
-<p>启动rabbitmq_management插件，再启动rabbitmq-server即可。</p>
-<h5 id="rabbit-mq用户管理"><a href="#rabbit-mq用户管理" class="headerlink" title="rabbit mq用户管理"></a>rabbit mq用户管理</h5><p>增加用户，设置权限<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rabbitmqctl add_user test test</span><br><span class="line">rabbitmqctl set_user_tags test administrator</span><br><span class="line">rabbitmqctl set_permissions -p / test &quot;.*&quot; &quot;.*&quot; &quot;.*&quot;</span><br></pre></td></tr></table></figure></p>
-<h2 id="Share"><a href="#Share" class="headerlink" title="Share"></a>Share</h2><p><a href="https://www.rabbitmq.com/production-checklist.html" target="_blank" rel="noopener">https://www.rabbitmq.com/production-checklist.html</a><br>生产环境使用rabbit mq时清单。</p>
+        <h3 id="Algorithm"><a href="#Algorithm" class="headerlink" title="Algorithm"></a>Algorithm</h3><p>You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.</p>
+<p>You may assume the two numbers do not contain any leading zero, except the number 0 itself.</p>
+<p>Example:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: (2 -&gt; 4 -&gt; 3) + (5 -&gt; 6 -&gt; 4)</span><br><span class="line">Output: 7 -&gt; 0 -&gt; 8</span><br><span class="line">Explanation: 342 + 465 = 807.</span><br></pre></td></tr></table></figure></p>
+<h5 id="Answer"><a href="#Answer" class="headerlink" title="Answer"></a>Answer</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"># Definition for singly-linked list.</span><br><span class="line"># class ListNode(object):</span><br><span class="line">#     def __init__(self, x):</span><br><span class="line">#         self.val = x</span><br><span class="line">#         self.next = None</span><br><span class="line"></span><br><span class="line">class Solution(object):</span><br><span class="line">    def addTwoNumbers(self, l1, l2):</span><br><span class="line">        &quot;&quot;&quot;</span><br><span class="line">        :type l1: ListNode</span><br><span class="line">        :type l2: ListNode</span><br><span class="line">        :rtype: ListNode</span><br><span class="line">        &quot;&quot;&quot;</span><br><span class="line">        carry = 0</span><br><span class="line">        root = n = ListNode(0)</span><br><span class="line">        while l1 or l2 or carry:</span><br><span class="line">            v1 = v2 = 0</span><br><span class="line">            if l1:</span><br><span class="line">                v1 = l1.val</span><br><span class="line">                l1 = l1.next</span><br><span class="line">            if l2:</span><br><span class="line">                v2 = l2.val</span><br><span class="line">                l2 = l2.next</span><br><span class="line">            carry, val = divmod(v1+v2+carry, 10)</span><br><span class="line">            n.next = ListNode(val)</span><br><span class="line">            n = n.next</span><br><span class="line">        return root.next</span><br></pre></td></tr></table></figure>
+<h3 id="Review"><a href="#Review" class="headerlink" title="Review"></a>Review</h3><p><a href="https://www.quora.com/What-are-some-of-the-most-basic-things-every-programmer-should-know#" target="_blank" rel="noopener">https://www.quora.com/What-are-some-of-the-most-basic-things-every-programmer-should-know#</a></p>
+<p>25个程序员应该知道的事情。有几个需要在平时工作中加强实践。</p>
+<p>2.Code reviews by your peers will make all of you better. 目前公司确实没有code view，不过可以在自己组内尝试实践，增强彼此的能力。</p>
+<p>3.Learn to Pseudo code the objective(s) before applying a language to the objective(s). (All programs break down to inputs, outputs, and manipulation, etc.)  学习伪代码，并在工作中尝试且坚持使用。</p>
+<p>13.Look and learn constantly, but beware the shortcuts. 持续不断的学习和总结，需要持之以恒。</p>
+<p>17.Great troubleshooters and problem solvers are true treasures if you find one. Don’t abuse it! 工作中确实没有与解决问题能力强的人太多交流，后面要关注这一点，多交流。</p>
+<p>文中提到一点关于上级，对该观点存疑。<br>21.Make your boss look good always. If you don’t like or respect or if you can’t learn anything more from your boss, seek a new one immediately.</p>
+<h3 id="Tip"><a href="#Tip" class="headerlink" title="Tip"></a>Tip</h3><h5 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h5><p>对网站常用数据指标进行汇总。</p>
+<p>PV Page View，页面访问量 用户每次对网站中的网页访问一次记录一次，用户对同一个网页多次刷新，访问量累计。</p>
+<p>UV Unique Visitor 独立访客。基于客户端cookie实现，用户对同一个网页多次访问指计算一次，访问量不统计。</p>
+<p>DAU Daily Active User 日活跃用户。DAU通常统计一日（统计日）之内，登录或使用了某个产品的用户数（去除重复登录的用户），这与流量统计工具里的访客（UV）概念相似。</p>
+<p>TPS Transactions Per Second 每秒处理事务数。</p>
+<p>QPS Queries Per Second 每秒处理查询数。</p>
+<p>RPS Requests Per Second的缩写，每秒能处理的请求数目，等效于QPS。</p>
+<p>并发数 系统同时能处理的请求数量，这个也是反应了系统的负载能力。</p>
+<h5 id="计算"><a href="#计算" class="headerlink" title="计算"></a>计算</h5><p>峰值QPS：</p>
+<p>原理：每天80%的访问集中在20%的时间里，这20%时间叫做峰值时间</p>
+<p>公式：( 总PV数 <em> 80% ) / ( 每天秒数 </em> 20% ) = 峰值时间每秒请求数(QPS)</p>
+<p>QPS（TPS）、并发数、响应时间它们三者之间的关系是：</p>
+<pre><code>QPS（TPS）= 并发数 / 平均响应时间
+并发数 = QPS * 平均响应时间
+</code></pre><h3 id="Share"><a href="#Share" class="headerlink" title="Share"></a>Share</h3><p><a href="https://stackify.com/unit-testing-basics-best-practices/" target="_blank" rel="noopener">https://stackify.com/unit-testing-basics-best-practices/</a><br> 极客时间左耳听风专栏中推荐的一篇文章。文章首先划定什么不是单元测试。然后从最原始的方式开始引入单元测试框架，对于初学者来说值得一看。</p>
 
       
     </div>
@@ -332,8 +349,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/10/ARTS第三周/" rel="next" title="ARTS第三周">
-                <i class="fa fa-chevron-left"></i> ARTS第三周
+              <a href="/2019/04/26/ARTS第六周/" rel="next" title="ARTS第六周">
+                <i class="fa fa-chevron-left"></i> ARTS第六周
               </a>
             
           </div>
@@ -342,8 +359,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/04/16/ARTS第五周/" rel="prev" title="ARTS第五周">
-                ARTS第五周 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/05/05/ARTS第八周/" rel="prev" title="ARTS第八周">
+                ARTS第八周 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -467,7 +484,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Algorithm"><span class="nav-number">1.</span> <span class="nav-text">Algorithm</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#answer"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">answer</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#Rewiew"><span class="nav-number">2.</span> <span class="nav-text">Rewiew</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tips"><span class="nav-number">3.</span> <span class="nav-text">Tips</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#rabbit-mq启动UI管理界面"><span class="nav-number">3.0.0.1.</span> <span class="nav-text">rabbit mq启动UI管理界面</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#rabbit-mq用户管理"><span class="nav-number">3.0.0.2.</span> <span class="nav-text">rabbit mq用户管理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Share"><span class="nav-number">4.</span> <span class="nav-text">Share</span></a></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Algorithm"><span class="nav-number">1.</span> <span class="nav-text">Algorithm</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Answer"><span class="nav-number">1.0.1.</span> <span class="nav-text">Answer</span></a></li></ol></li></ol><li class="nav-item nav-level-3"><a class="nav-link" href="#Review"><span class="nav-number">2.</span> <span class="nav-text">Review</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tip"><span class="nav-number">3.</span> <span class="nav-text">Tip</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#概念"><span class="nav-number">3.0.1.</span> <span class="nav-text">概念</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#计算"><span class="nav-number">3.0.2.</span> <span class="nav-text">计算</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Share"><span class="nav-number">4.</span> <span class="nav-text">Share</span></a></li></div>
             
 
           </div>
